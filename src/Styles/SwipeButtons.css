@@ -1,0 +1,43 @@
+.swipe__buttons {
+  max-width: 1000px;
+  /* border: 2px solid gray; */
+  padding: 20px;
+  margin: 70vh auto 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* position: absolute;
+  bottom: 100px;
+  left: 40%; */
+}
+.swipe__button {
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 18px;
+  border-radius: 50%;
+}
+.reply {
+  color: orange;
+  font-weight: bolder;
+}
+.close {
+  color: crimson;
+}
+.star {
+  color: rgb(0, 47, 255);
+}
+.fav {
+  color: rgb(255, 0, 200);
+}
+.flash {
+  color: firebrick;
+}
+@media screen and (max-width: 1000px) {
+  .swipe__buttons {
+    margin: 70vh 30px 20px;
+  }
+  .swipe__button {
+    padding: 10px;
+  }
+}

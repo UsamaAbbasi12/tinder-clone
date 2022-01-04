@@ -2,6 +2,7 @@ import "./App.css";
 import Header from "./Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Card from "./Card";
+import SwipeButtons from "./SwipeButtons";
 
 function App() {
   return (
@@ -9,8 +10,19 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="/" element={<Card />}></Route>
-          <Route path="/about" element={<h1>Hello This is About</h1>}></Route>
+          <Route path="/chat" element={<h1>Hello This is About</h1>}></Route>
+          <Route
+            path="/"
+            element={
+              <>
+                {" "}
+                <Card />
+                <SwipeButtons />
+              </>
+            }
+          >
+            {" "}
+          </Route>
         </Routes>
       </Router>
     </div>
